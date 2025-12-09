@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indian Flag (Tiranga)</title>
+  <style>
+    :root {
+      --saffron: #FF9933;
+      --white: #FFFFFF;
+      --green: #138808;
+      --navy-blue: #000080;
+    }
+
+    body {
+      background: #f5f5f5;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    .flag {
+      width: 600px;           
+      aspect-ratio: 3 / 2;    
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      overflow: hidden;
+    }
+
+    .band { display: grid; place-items: center; }
+    .saffron { background: var(--saffron); }
+    .white   { background: var(--white); position: relative; }
+    .green   { background: var(--green); }
+
+ 
+    .chakra {
+      width: 32%;
+      aspect-ratio: 1 / 1;
+      display: block;
+    }
+
+ 
+    .caption {
+      margin-top: 12px;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <div class="flag" role="img" aria-label="Flag of India, three horizontal bands with Ashoka Chakra centered">
+      <div class="band saffron"></div>
+
+      <div class="band white">
+        <!-- Ashoka Chakra (SVG) -->
+        <svg class="chakra" viewBox="0 0 100 100" aria-hidden="true">
+          <!-- Outer wheel -->
+          <circle cx="50" cy="50" r="32" fill="none" stroke="#000080" stroke-width="3"/>
+
+          <!-- 24 spokes -->
+          <!-- Each spoke is a line rotated 15° increments (360/24 = 15) -->
+          <g stroke="#000080" stroke-width="2" stroke-linecap="round">
+            <!-- Generate spokes -->
+            <!-- You can repeat lines via transforms -->
+            <!-- Base spoke up -->
+            <line x1="50" y1="50" x2="50" y2="18"/>
+            <g transform="rotate(15 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(30 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(45 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(60 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(75 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(90 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(105 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(120 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(135 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(150 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(165 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(180 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(195 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(210 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(225 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(240 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(255 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(270 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(285 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(300 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(315 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(330 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+            <g transform="rotate(345 50 50)"><line x1="50" y1="50" x2="50" y2="18"/></g>
+          </g>
+
+          <!-- Hub -->
+          <circle cx="50" cy="50" r="3.2" fill="#000080"/>
+        </svg>
+      </div>
+
+      <div class="band green"></div>
+    </div>
+    <figcaption class="caption">Indian National Flag (Tiranga) — for display purposes.</figcaption>
+  </figure>
+</body>
+</html>
